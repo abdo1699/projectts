@@ -1,0 +1,97 @@
+/* Basic button styling for the first button */
+.fancy-button {
+  background: linear-gradient(
+    45deg,
+    #ff6f61,
+    #ffcc00
+  ); /* Gradient background */
+  border: none; /* Remove default border */
+  color: white; /* Text color */
+  padding: 15px 15px; /* Padding */
+  font-size: 30px; /* Font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 6px 9px rgba(0, 0, 0, 0.2); /* Shadow */
+  transition: all 0.5s ease; /* Smooth transition */
+  outline: none; /* Remove outline */
+}
+
+/* Hover effect for the first button */
+.fancy-button:hover {
+  background: linear-gradient(
+    45deg,
+    #fcfcfc,
+    #000000
+  ); /* Reverse gradient on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+  transform: translateY(-9px); /* Slight lift */
+}
+
+/* Active (click) effect for the first button */
+.fancy-button:active {
+  transform: translateY(0); /* Reset lift */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}
+
+/* Unique styling for the second button */
+.fancy-button-2 {
+  background: linear-gradient(
+    45deg,
+    #ff6f61,
+    #ffcc00
+  ); /* New gradient background */
+  color: #000000; /* Black text color */
+}
+
+/* Hover effect for the second button */
+.fancy-button-2:hover {
+  background: linear-gradient(
+    45deg,
+    #ffcc00,
+    #ff6f61
+  ); /* Reverse gradient on hover */
+}
+.cs-subscribe-button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+
+}
+.cs-subscribed-button{
+
+  background-color: rgb(192, 70, 70);
+  color: black;
+}
+body {
+
+  font-family: Arial;
+}
+.cs-input{
+ font-size: 15px;
+  padding: 10px;
+}
+.cs-calculate { 
+
+  background-color: green;
+  padding: 13px;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+.cs-go{
+background-color: white;
+  text-decoration:underline;
+  padding: 13px;
+  color: rgb(7, 4, 4);
+  cursor: pointer;
+  border: none;
+  
+}

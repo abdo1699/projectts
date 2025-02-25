@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DOM projects</title>
+    <link rel="stylesheet" href="008-styless.css" />
+
+  </head>
+  <body>
+    <p>Youtube subscribe button</p>
+    <button onclick="subscribe();" class="js-subscribe-button cs-subscribe-button">
+      Subscribe
+    </button>
+    <p>Amazon shipping Calculator</p>
+    <p>Shipping = $10</p>
+    <p>Orders Above $40 = Free shipping</p>
+    <input
+      placeholder="cost of order"
+      class="js-cost-input cs-input"
+      onkeydown="handleCostKeydown(event);"
+    />
+    <button onclick="calculateTotal();" class="cs-calculate">Calculate</button>
+    <p class="js-total-cost"></p>
+    <p>For rock paper scissors project</p>
+    <a href="10-rock-paper-sccisor.html">
+      <button class="cs-go">Go to rock paper scissors Page</button>
+    </a>
+    <script>
+      function handleCostKeydown(event) {
+        if (event.key === "Enter") {
+          calculateTotal();
+        }
+      }
+      function calculateTotal() {
+        let coststr = document.querySelector(".js-cost-input").value;
+        let cost = Number(coststr);
+        if (cost < 40) {
+          cost = cost + 10;
+        }
+        document.querySelector(".js-total-cost").innerHTML = `$${cost}`;
+      }
+
+      function subscribe() {
+        const buttonElement = document.querySelector(".js-subscribe-button");
+
+        if (buttonElement.innerText === "Subscribe") {
+          buttonElement.innerHTML = "Subscribed";
+        buttonElement.classList.add('cs-subscribed-button');
+        } else {
+            buttonElement.classList.remove('cs-subscribed-button');
+          buttonElement.innerHTML = "Subscribe";
+        }
+      }
+    </script>
+  </body>
+</html>
